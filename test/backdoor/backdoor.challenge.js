@@ -22,7 +22,7 @@ describe('[Challenge] Backdoor', function () {
             this.walletFactory.address,
             this.token.address,
             users
-        );
+        );//todo will add soon 
 
         // Users are registered as beneficiaries
         for (let i = 0; i < users.length; i++) {
