@@ -25,7 +25,7 @@ describe('[Challenge] Climber', function () {
             await ethers.getContractFactory('ClimberVault', deployer),
             [ deployer.address, proposer.address, sweeper.address ],
             { kind: 'uups' }
-        );
+        );// todo
 
         expect(await this.vault.getSweeper()).to.eq(sweeper.address);
         expect(await this.vault.getLastWithdrawalTimestamp()).to.be.gt('0');
